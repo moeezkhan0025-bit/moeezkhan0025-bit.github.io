@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halden Prairie — Site Development Hub</title>
+<meta name="description" content="Demonstration project hub for land development due diligence. Fictional project and data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+<div class="case">
+  <header class="hdr">
+    <div class="hdr-top">
+      <div class="brand">
+        <h1 id="projName">Halden Prairie</h1>
+        <p id="projMeta"></p>
+      </div>
+      <span class="stamp" title="All data in this demo is invented">Fictional project</span>
+      <div class="controls">
+        <select class="projsel" id="projSel" aria-label="Project"></select>
+        <div class="seg" role="group" aria-label="Snapshot" id="snapSeg"></div>
+        <div class="seg" role="group" aria-label="View as" id="roleSeg"></div>
+        <button class="hbtn" id="btnTheme" aria-label="Switch color theme"></button>
+        <button class="hbtn" id="btnPrint">Design brief</button>
+        <button class="hbtn danger" id="btnReset">Reset demo</button>
+      </div>
+    </div>
+    <div class="lcd" id="lcd" aria-live="polite"></div>
+  </header>
+
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <div class="work" id="work">
+    <main class="panel" id="main"></main>
+    <aside class="drawer" id="drawer" hidden></aside>
+  </div>
+  <div id="printArea"></div>
+</div>
+<footer class="legal"><span><a href="../index.html" style="color:inherit">← Back to the portfolio</a> · Demonstration tool with a fictional project. All companies, sites and data are invented. Not for construction or professional use.</span><span>Site Development Hub, phase 1 mockup</span></footer>
+
+<script src="data/project.js"></script>
+<script src="data/guides.js"></script>
+<script src="data/cotton-creek.js"></script>
+<script src="data/guides-cotton-creek.js"></script>
+<script src="app/projects.js"></script>
+<script src="app/figures.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>
